@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thaariq.MusicPlayerApp.MainActivity"
+    android:background="@drawable/background"
+    style="@style/Theme.AppCompat.DayNight.NoActionBar"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/greeting"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sf_pro_bold"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_music_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+
+
+</LinearLayout>

@@ -2,29 +2,224 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Theme.AppCompat.DayNight.NoActionBar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.thaariq.MusicPlayerApp.MainActivity"
     android:background="@drawable/background"
-    style="@style/Theme.AppCompat.DayNight.NoActionBar"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="com.thaariq.MusicPlayerApp.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/sf_pro_bold"
         android:text="@string/greeting"
-        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <GridLayout
+        android:id="@+id/gl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:columnCount="3"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="182dp"
+            android:layout_height="50dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:backgroundTint="#3E3B3B">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/mishary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_bold"
+                android:textSize="12sp"
+                android:text="Mishary Rashid"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8dp"
+                android:layout_marginVertical="13dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="182dp"
+            android:layout_height="50dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#3E3B3B">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/taha"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_bold"
+                    android:textSize="12sp"
+                    android:text="Taha Al Junayd"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginVertical="13dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="182dp"
+            android:layout_height="50dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#3E3B3B">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/muzammil"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_bold"
+                    android:textSize="12sp"
+                    android:text="Muzammil Hasballah"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginVertical="13dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="182dp"
+            android:layout_height="50dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#3E3B3B">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/yasser"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_bold"
+                    android:textSize="12sp"
+                    android:text="Yasser Al Dosary"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginVertical="13dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="182dp"
+            android:layout_height="50dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#3E3B3B">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/abdurrahman"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_bold"
+                    android:textSize="11sp"
+                    android:text="Abdurrahman Al Ossy"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginVertical="14dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="182dp"
+            android:layout_height="50dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#3E3B3B">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/fatih"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_bold"
+                    android:textSize="12sp"
+                    android:text="Fatih Seferagic"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginVertical="13dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:textColor="@color/white"
         android:fontFamily="@font/sf_pro_bold"
-        android:layout_marginTop="32dp"
-        android:layout_marginStart="20dp"/>
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:text="Recently Played"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_music_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"/>
-
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/row_item" />
 
 
 </LinearLayout>

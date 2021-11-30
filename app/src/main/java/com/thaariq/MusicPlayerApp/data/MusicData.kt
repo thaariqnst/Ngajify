@@ -1,4 +1,4 @@
-package com.thaariq.MusicPlayerApp
+package com.thaariq.MusicPlayerApp.data
 
 import com.thaariq.musicplayerapp.R
 

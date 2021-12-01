@@ -10,4 +10,6 @@
 
     <color name="Green">#1DB954</color>
     <color name="lightGreen">#80CE9C</color>
+    <color name="secondary">#313431</color>
+    <color name="BottomNavColor">#282828</color>
 </resources>

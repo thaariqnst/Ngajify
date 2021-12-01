@@ -3,4 +3,16 @@
     <string name="musicname">MusicName</string>
     <string name="musicalbum">MusicAlbum</string>
     <string name="greeting">Welcome back</string>
+    <string name="mishary">Mishary Rashid</string>
+    <string name="taha">Taha Al Junayd</string>
+    <string name="muzammil">Muzammil Hasballah</string>
+    <string name="yasser">Yasser Al Dosary</string>
+    <string name="abdurrahmanNotComplete">Abdurrahman Al ...</string>
+    <string name="abdurrahmanComplete">Abdurrahman Al Ossi</string>
+    <string name="fatih">Fatih Seferagic</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_home">Home</string>
+    <string name="txt_search">Search</string>
+    <string name="txt_library">Library</string>
 </resources>

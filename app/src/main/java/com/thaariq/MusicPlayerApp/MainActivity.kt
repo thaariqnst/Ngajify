@@ -1,32 +1,44 @@
 package com.thaariq.MusicPlayerApp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.thaariq.MusicPlayerApp.data.Music
-import com.thaariq.MusicPlayerApp.data.MusicData
 import com.thaariq.musicplayerapp.R
+import com.thaariq.musicplayerapp.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var rvMusic: RecyclerView
-    private var list:ArrayList<Music> = arrayListOf()
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        rvMusic= findViewById(R.id.rv_music_list)
-        rvMusic.setHasFixedSize(true)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        supportActionBar?.hide()
 
-        list.addAll(MusicData.listdata)
-        showRecyclerList()
+        val navView : BottomNavigationView = binding.navView
+
+        val navController = findNavController(R.id.nav_host_fragment_activity_main)
+
+        val appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.navigation_home
+            )
+        )
+
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
+
+
     }
 
-    private fun showRecyclerList() {
-        rvMusic.layoutManager= LinearLayoutManager(this)
-        val listMusicAdapter= ListMusicAdapter(list)
-        rvMusic.adapter = listMusicAdapter
-    }
+
 }

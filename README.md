@@ -10,5 +10,5 @@ Featuring all of the famous qari around the world and syaikhul kibar from the mi
 ## Authors
 
 Thaariq nasution
-[@thaariqnst(https://twitter.com/itstznxxbruh)
+[@thaariqnst(https://twitter.com/itstznxxbruh)]
 

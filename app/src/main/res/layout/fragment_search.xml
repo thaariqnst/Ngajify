@@ -1,0 +1,234 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thaariq.MusicPlayerApp.ui.SearchFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.thaariq.MusicPlayerApp.ui.SearchFragment"
+        android:background="@drawable/background2">
+
+        <TextView
+            android:id="@+id/txt_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="70dp"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/sf_pro_bold"
+            android:text="@string/txt_search"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txt_search"
+            app:cardCornerRadius="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="60dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <SearchView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#60000000"
+                    android:fontFamily="@font/sf_pro_bold"
+                    android:text="Ustadz, Lectures, and Recites" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cv_search_bar"
+            app:layout_constraintTop_toTopOf="@id/cv_search_bar"
+            tools:layout_editor_absoluteY="168dp"
+            android:src="@drawable/ic_microphone"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cv_search_bar"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/sf_pro_bold"
+            android:text="Your top lecture genres" />
+
+        <LinearLayout
+            android:id="@+id/cv_genre1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/tv_genre"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="175dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="@color/red"
+                app:cardCornerRadius="5dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="175dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                app:cardBackgroundColor="@color/yellow"
+                app:cardCornerRadius="5dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_genre2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cv_genre1"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/sf_pro_bold"
+            android:text="Popular quran juz" />
+
+        <LinearLayout
+            android:id="@+id/cv_popular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/tv_genre2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="175dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="@color/red"
+                app:cardCornerRadius="5dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="175dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="5dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_genre3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cv_popular"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/sf_pro_bold"
+            android:text="Browse all" />
+
+        <LinearLayout
+            android:id="@+id/ll_browse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/tv_genre3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="175dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/blue"
+                    app:cardCornerRadius="5dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="175dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    app:cardBackgroundColor="@color/lightBlue"
+                    app:cardCornerRadius="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="175dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/pink"
+                    app:cardCornerRadius="5dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="175dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    app:cardBackgroundColor="@color/green3"
+                    app:cardCornerRadius="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="175dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/lightBlue"
+                    app:cardCornerRadius="5dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="175dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    app:cardBackgroundColor="@color/brown"
+                    app:cardCornerRadius="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

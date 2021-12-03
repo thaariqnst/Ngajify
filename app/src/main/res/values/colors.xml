@@ -12,4 +12,12 @@
     <color name="lightGreen">#80CE9C</color>
     <color name="secondary">#313431</color>
     <color name="BottomNavColor">#282828</color>
+    <color name="red">#EB1E32</color>
+    <color name="yellow">#F59B23</color>
+    <color name="blue">#1E3264</color>
+    <color name="lightBlue">#5DACF5</color>
+    <color name="teal">#33DD9F</color>
+    <color name="pink">#FB3BFF</color>
+    <color name="green3">#25B187</color>
+    <color name="brown">#671919</color>
 </resources>

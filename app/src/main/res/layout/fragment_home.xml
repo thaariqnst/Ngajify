@@ -39,7 +39,7 @@
                 android:layout_height="50dp"
                 android:layout_row="0"
                 android:layout_column="0"
-                android:backgroundTint="@color/secondary">
+                android:backgroundTint="#605f5f5f">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -59,6 +59,7 @@
                         android:textColor="@color/white"
                         android:layout_marginStart="8dp"
                         android:layout_marginVertical="13dp"/>
+
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -69,7 +70,7 @@
                 android:layout_row="1"
                 android:layout_column="0"
                 android:layout_marginTop="8dp"
-                android:backgroundTint="@color/secondary">
+                android:backgroundTint="#605f5f5f">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -99,7 +100,7 @@
                 android:layout_row="2"
                 android:layout_column="0"
                 android:layout_marginTop="8dp"
-                android:backgroundTint="@color/secondary">
+                android:backgroundTint="#605f5f5f">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -129,7 +130,7 @@
                 android:layout_row="0"
                 android:layout_column="1"
                 android:layout_marginStart="8dp"
-                android:backgroundTint="@color/secondary">
+                android:backgroundTint="#605f5f5f">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -160,7 +161,7 @@
                 android:layout_column="1"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:backgroundTint="@color/secondary">
+                android:backgroundTint="#605f5f5f">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -191,7 +192,7 @@
                 android:layout_column="1"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:backgroundTint="@color/secondary">
+                android:backgroundTint="#605f5f5f">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -223,7 +224,7 @@
             android:fontFamily="@font/sf_pro_bold"
             android:textSize="20sp"
             android:layout_marginTop="10dp"
-            android:text="Your Morning Music"/>
+            android:text="Lectures for you"/>
 
         <HorizontalScrollView
             android:layout_width="match_parent"
@@ -253,7 +254,7 @@
                         <ImageView
                             android:layout_width="150dp"
                             android:layout_height="150dp"
-                            android:src="@drawable/mishary" />
+                            android:src="@drawable/zaen" />
                     </androidx.cardview.widget.CardView>
                     <TextView
                         android:layout_width="wrap_content"
@@ -263,7 +264,7 @@
                         app:layout_constraintStart_toStartOf="@id/img"
                         android:fontFamily="@font/sf_pro_bold"
                         android:textColor="@color/white"
-                        android:text="@string/mishary" />
+                        android:text="@string/zaen" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -276,7 +277,7 @@
                         android:id="@+id/img2"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/fatih"
+                        android:src="@drawable/khalid"
                         android:layout_marginTop="15dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -289,7 +290,7 @@
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/sf_pro_bold"
                         android:textColor="@color/white"
-                        android:text="@string/fatih" />
+                        android:text="@string/khalid" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -302,7 +303,7 @@
                         android:id="@+id/img3"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/abdurrahman"
+                        android:src="@drawable/syafiq"
                         android:layout_marginTop="15dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -315,20 +316,21 @@
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/sf_pro_bold"
                         android:textColor="@color/white"
-                        android:text="@string/abdurrahmanComplete" />
+                        android:text="@string/syafiq" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/hsv_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp">
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
 
                     <ImageView
                         android:id="@+id/img4"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/taha"
+                        android:src="@drawable/badrussalam"
                         android:layout_marginTop="15dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -341,7 +343,7 @@
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/sf_pro_bold"
                         android:textColor="@color/white"
-                        android:text="@string/taha" />
+                        android:text="@string/badrussalam" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
         </HorizontalScrollView>

@@ -10,4 +10,9 @@
         android:name="com.thaariq.MusicPlayerApp.ui.HomeFragment"
         tools:layout="@layout/fragment_home" />
 
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.thaariq.MusicPlayerApp.ui.SearchFragment"
+        tools:layout="@layout/fragment_search" />
+
 </navigation>

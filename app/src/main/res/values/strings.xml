@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SpotifyKW</string>
+    <string name="app_name">MusicPlayerApp</string>
     <string name="musicname">MusicName</string>
     <string name="musicalbum">MusicAlbum</string>
     <string name="greeting">Welcome back</string>
@@ -15,4 +15,8 @@
     <string name="txt_home">Home</string>
     <string name="txt_search">Search</string>
     <string name="txt_library">Library</string>
+    <string name="zaen">Abdullah Zaen</string>
+    <string name="khalid">Khalid Basalamah</string>
+    <string name="syafiq">Syafiq Riza Basalamah</string>
+    <string name="badrussalam">Abu Yahya Badrussalam</string>
 </resources>

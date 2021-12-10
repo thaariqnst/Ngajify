@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MusicPlayerApp">
         <activity
+            android:name="com.thaariq.MusicPlayerApp.PlayerActivity"
+            android:exported="true" />
+        <activity
             android:name="com.thaariq.MusicPlayerApp.SplashScreenActivity"
             android:exported="true">
             <intent-filter>

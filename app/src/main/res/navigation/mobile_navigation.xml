@@ -15,4 +15,9 @@
         android:name="com.thaariq.MusicPlayerApp.ui.SearchFragment"
         tools:layout="@layout/fragment_search" />
 
+    <fragment
+        android:id="@+id/navigation_library"
+        android:name="com.thaariq.MusicPlayerApp.ui.LibraryFragment"
+        tools:layout="@layout/fragment_library" />
+
 </navigation>

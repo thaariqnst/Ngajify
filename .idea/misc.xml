@@ -7,16 +7,21 @@
         <entry key="app/src/main/res/drawable/background.xml" value="0.2111111111111111" />
         <entry key="app/src/main/res/drawable/background2.xml" value="0.34564102564102567" />
         <entry key="app/src/main/res/drawable/gradient.xml" value="0.2111111111111111" />
+        <entry key="app/src/main/res/drawable/ic_back.xml" value="0.3435897435897436" />
+        <entry key="app/src/main/res/drawable/ic_baseline_pause.xml" value="0.3435897435897436" />
         <entry key="app/src/main/res/drawable/ic_home.xml" value="0.34564102564102567" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2111111111111111" />
         <entry key="app/src/main/res/drawable/ic_library.xml" value="0.34564102564102567" />
         <entry key="app/src/main/res/drawable/ic_logo.xml" value="0.23796296296296296" />
         <entry key="app/src/main/res/drawable/ic_microphone.xml" value="0.34564102564102567" />
+        <entry key="app/src/main/res/drawable/ic_plus.xml" value="0.3435897435897436" />
         <entry key="app/src/main/res/drawable/ic_search.xml" value="0.34564102564102567" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.3188405797101449" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_player.xml" value="0.29891304347826086" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.21739130434782608" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_library.xml" value="0.31431159420289856" />
         <entry key="app/src/main/res/layout/fragment_search.xml" value="0.25" />
         <entry key="app/src/main/res/layout/list_item.xml" value="0.5" />
         <entry key="app/src/main/res/layout/recent_item.xml" value="0.322463768115942" />

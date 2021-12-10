@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.thaariq.MusicPlayerApp.PlayerActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="-16dp"
+            />
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="336dp"
+        android:layout_height="336dp"
+        android:layout_marginVertical="12dp"
+        android:src="@drawable/abdurrahman" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:text="Al Qari'ah"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOlive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="40dp"
+            android:text="@string/abdurrahmanComplete"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="224dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_heart" />
+
+    </LinearLayout>
+
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:progress="50"
+        android:progressBackgroundTint="#c4c4c4"
+        android:progressTint="@color/white"
+        android:thumbTint="@color/white"
+        android:layout_marginBottom="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="-25dp"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:id="@+id/elapsedTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:11"
+            android:textColor="#fff"/>
+        <TextView
+            android:id="@+id/remainingTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-1:11"
+            android:textColor="#fff"
+            android:layout_marginStart="264dp"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/shuffle"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_shuffle"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="38dp"/>
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_navigate_before" />
+
+        <ImageButton
+            android:id="@+id/play_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_play" />
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_navigate_next" />
+
+        <ImageButton
+            android:id="@+id/repeat"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_repeat"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="38dp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

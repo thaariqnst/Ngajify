@@ -12,6 +12,7 @@ import com.thaariq.MusicPlayerApp.ListMusicAdapter.ListViewHolder
 import com.thaariq.MusicPlayerApp.data.Music
 import com.thaariq.musicplayerapp.R
 import com.thaariq.musicplayerapp.databinding.ListItemBinding
+import android.content.Intent
 
 class ListMusicAdapter(private val listmusic : ArrayList<Music>) :
     RecyclerView.Adapter<ListViewHolder>() {
@@ -33,7 +34,8 @@ class ListMusicAdapter(private val listmusic : ArrayList<Music>) :
 
                 Glide.with(imgItemPhoto.context).load(cover).into(imgItemPhoto)
                 holder.itemView.setOnClickListener{
-                    // ISI INTENT
+                    var intent = Intent(it.context, PlayerActivity::class.java)
+                    it.context.startActivity(intent)
                 }
             }
         }

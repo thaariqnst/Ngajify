@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MusicPlayerApp</string>
+    <string name="app_name">Halal Spotify</string>
     <string name="musicname">MusicName</string>
     <string name="musicalbum">MusicAlbum</string>
     <string name="greeting">Welcome back</string>
